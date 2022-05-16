@@ -1,6 +1,9 @@
 .card {
     max-width: 282px;
     margin: 0 auto;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .card__image {

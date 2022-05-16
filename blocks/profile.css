@@ -1,0 +1,122 @@
+.profile {
+    margin: 36px auto 0;
+    display: flex;
+    flex-direction: row;
+    max-width: 880px;
+}
+
+.profile__img {
+    max-width: 168px;
+    max-height: 127px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 30px 0 0;
+}
+
+.profile__info {
+    display: grid;
+  grid-template-areas:
+    "name button"
+    "job .";
+  grid-template-rows: minmax(auto, 65px);
+  gap: 16px 18px;
+}
+
+.profile__name {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 48px;
+    margin: 24px 0 0 0;
+    grid-area: name;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.profile__edit-button {
+    background-image: url("../images/edit_icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #fff;
+    background-color: #000000;
+    width: 24px;
+    height: 24px;
+    grid-area: button;
+    margin: 39px 0 0 0;
+    transition: 0.3s;
+}
+
+.profile__edit-button:hover {
+    opacity: 0.6;
+    cursor:pointer;
+}
+
+.profile__job {
+    grid-area: job;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0;
+}
+
+.profile__add-button {
+    margin-left: auto;
+    background-image: url("../images/add_icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000000;
+    border: 2px solid #FFFFFF;
+    border-radius: 2px;
+    max-width: 150px;
+    width: 100%;
+    height: 50px;
+    margin-top: 37px;
+    transition: 0.3s;
+}
+
+.profile__add-button:hover {
+    opacity: 0.6;
+    cursor:pointer;
+}
+
+@media screen and (max-width: 675px) {
+    .profile {
+        flex-direction: column;
+        margin: 38px auto 0;
+    }
+
+    .profile__img {
+        max-height: 100%;
+        margin: 0 auto;
+    }
+
+    .profile__info {
+      gap: 14px 10px;
+      grid-template-columns: minmax(auto, 193px);
+      margin: 0 auto;
+    }
+
+    .profile__name {
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+        margin: 26px 0 0 0;
+        padding-left: 3px;
+    }
+
+    .profile__edit-button {
+        margin: 30px 0 0 0;
+    }
+
+    .profile__job {
+        text-align: center;
+        font-size: 14px;
+        line-height: 16px;
+        padding-left: 40px;
+    }
+
+    .profile__add-button {
+        margin: 36px auto 0;
+        max-width: 278px;
+    }
+
+}

@@ -12,21 +12,34 @@
   }
   
   .popup_is-opened {
-    position: fixed;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .popup__close-btn {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .popup__close-btn:hover {
+    opacity: 0.6;
+    cursor:pointer;
+  }
+
+  .popup__close-icon {
+    width:100%;
+    height:auto;
   }
   
   .popup__form {
     position: relative;
-    height: 330px;
+    min-height: 330px;
     width: 430px;
     background-color: #fff;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
@@ -36,5 +49,13 @@
   @media screen and (max-width: 680px) {
     .popup__form {
       width: 282px;
+      min-height: 322px;
+    }
+
+    .popup__close-btn {
+      width: 26px;
+      height: 26px;
+      right: 0;
+      top: -53px;
     }
   }

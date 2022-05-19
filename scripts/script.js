@@ -4,8 +4,8 @@ const formEditCloseIcon = document.querySelector(".popup__close-icon");
 const profileEditForm = document.querySelector("#form");
 const profileNameElement = document.querySelector(".profile__name");
 const profileJobElement = document.querySelector(".profile__job");
-const profileNameInput = form.querySelector(".form__input-popup_type-name");
-const profileJobInput = form.querySelector(".form__input-popup_type-job");
+const profileNameInput = form.querySelector(".form__input-popup_type_name");
+const profileJobInput = form.querySelector(".form__input-popup_type_job");
 const cardEditIcon = document.querySelector(".card__icon");
 
 function openPopup() {
